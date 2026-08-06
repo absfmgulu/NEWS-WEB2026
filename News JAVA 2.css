@@ -1,0 +1,467 @@
+/* =========================================
+   ABS FM NEWS PAGE STYLE
+   ========================================= */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#222;
+
+}
+
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+
+a{
+
+    text-decoration:none;
+    color:#ff7b00;
+    font-weight:bold;
+
+}
+
+
+
+/* ==========================
+   NEWS BANNER
+========================== */
+
+
+.news-banner{
+
+    background:linear-gradient(135deg,#ff7b00,#111);
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+
+.news-banner h1{
+
+    font-size:45px;
+
+    margin-bottom:10px;
+
+}
+
+
+.news-banner p{
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* ==========================
+   BREAKING NEWS
+========================== */
+
+
+.breaking-news{
+
+    display:flex;
+
+    background:#000;
+
+    color:white;
+
+    align-items:center;
+
+    border-bottom:4px solid #ff7b00;
+
+}
+
+
+.breaking-label{
+
+    background:#ff7b00;
+
+    padding:15px 25px;
+
+    font-weight:bold;
+
+}
+
+
+.breaking-news marquee{
+
+    padding:15px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* ==========================
+   MAIN CONTAINER
+========================== */
+
+
+.news-container{
+
+    width:92%;
+
+    max-width:1300px;
+
+    margin:40px auto;
+
+}
+
+
+
+
+.section-title{
+
+    border-left:6px solid #ff7b00;
+
+    padding-left:15px;
+
+    margin-bottom:25px;
+
+    font-size:28px;
+
+}
+
+
+
+
+
+/* ==========================
+   STORIES GRID
+========================== */
+
+
+.stories-grid{
+
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:20px;
+
+
+}
+
+
+
+/* ==========================
+   STORY CARD
+========================== */
+
+
+.story{
+
+
+    background:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+
+.story:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+.story img{
+
+
+    height:180px;
+
+    object-fit:cover;
+
+
+}
+
+
+
+.story h3{
+
+    padding:15px;
+
+    font-size:20px;
+
+}
+
+
+.story a{
+
+
+    display:block;
+
+    padding:0 15px 20px;
+
+}
+
+
+
+
+/* ==========================
+   MAIN FEATURE STORY
+========================== */
+
+
+.story.featured{
+
+
+    grid-row:span 2;
+
+
+}
+
+
+
+.story.featured img{
+
+
+    height:380px;
+
+
+}
+
+
+
+.story-info{
+
+
+    padding:20px;
+
+}
+
+
+
+.story-info span{
+
+
+    background:#ff7b00;
+
+    color:white;
+
+    padding:5px 12px;
+
+    border-radius:5px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+.story-info h2{
+
+
+    font-size:30px;
+
+    margin:15px 0;
+
+
+}
+
+
+
+.story-info p{
+
+
+    color:#666;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+/* ==========================
+   LATEST NEWS
+========================== */
+
+
+.latest{
+
+
+    margin-top:50px;
+
+
+}
+
+
+
+#latestNews{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+footer{
+
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:50px;
+
+
+}
+
+
+footer p{
+
+    margin:8px;
+
+}
+
+
+
+
+
+/* ==========================
+   MOBILE DESIGN
+========================== */
+
+
+@media(max-width:900px){
+
+
+.stories-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+.story.featured{
+
+
+    grid-row:auto;
+
+
+}
+
+
+
+.story.featured img{
+
+
+    height:250px;
+
+
+}
+
+
+
+.story-info h2{
+
+
+    font-size:24px;
+
+
+}
+
+
+
+#latestNews{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.news-banner h1{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+.breaking-news{
+
+
+    flex-direction:column;
+
+
+}
+
+
+.breaking-label{
+
+
+    width:100%;
+
+    text-align:center;
+
+
+}
+
+
+}
